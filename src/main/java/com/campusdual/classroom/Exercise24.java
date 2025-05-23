@@ -14,8 +14,10 @@ public class Exercise24 {
 
     }
     public static void printAndEmptyQueue(Queue<String> queue) {
-        System.out.println(queue.toString());
-        queue.removeAll(queue);
+        while(!queue.isEmpty()){
+            System.out.println(queue.toString());
+            queue.poll();
+        }
     }
 
     public static void main(String[] args) {
